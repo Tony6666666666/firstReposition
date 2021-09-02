@@ -7,6 +7,6 @@ print('dev2分支增加一条hello消息')
 
 print('hello1')
 
-print('hello')
+print('修改到hello2')
 
 print('dev分支中添加hello3')
