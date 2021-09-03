@@ -9,4 +9,4 @@
 orginal:默认远程库名称
 
 #在本地库当前分支
-$ git remote add orginal 
+$ git remote add orginal  git@github.com:Tony6666666666/firstReposition.git(code里面的ssh)
