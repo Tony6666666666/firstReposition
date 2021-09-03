@@ -1,2 +1,2 @@
 1.查看远程关联
-  git remote -v
+$git remote -v
