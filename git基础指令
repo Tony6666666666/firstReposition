@@ -1,2 +1,7 @@
 1.查看远程关联
 $git remote -v
+2.跟新本地库
+$git pull --rebase origin master
+$git status
+$git add hello.py
+$git commit -m '描述信息'
