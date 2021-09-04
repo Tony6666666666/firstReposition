@@ -1,0 +1,3 @@
+if DEBUG:
+  from django.view.static import serve
+  urlpatterns.append(url(r'media/(.*)',serve,kwargs={'document_root':MEDIA_ROOT}))
