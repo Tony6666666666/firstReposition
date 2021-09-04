@@ -1,3 +1,7 @@
 if DEBUG:
-  from django.view.static import serve
+  from django.views.static import serve
   urlpatterns.append(url(r'media/(.*)',serve,kwargs={'document_root':MEDIA_ROOT}))
+  
+  
+#DEBUG来自from net1.settings import DEBUG, MEDIA_ROOT
+#url来自from django.conf.urls import url, include
