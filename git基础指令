@@ -5,3 +5,31 @@ $git pull --rebase origin master
 $git status
 $git add hello.py
 $git commit -m '描述信息'
+
+Git常用命令
+一、文件修改
+1.git status    查看文件状态
+
+2.vi hello.py  修改hello.py文件(修改之后的文件在工作区)
+
+3.git add hello.py   把hello.py文件从工作区加载到stage区（也就是复制一份过来到暂存区）
+
+4.git status  hello.py 再次查看hello.py
+
+5.git commit –m ‘第一次提交代码’ 移动到相应的分支(工作区的版本和分支的版本为同一个版本，一致了)
+
+二、文件撤销操作
+1.查看工作区和版本库里面最新版本的区别
+git diff HEAD hello.py
+
+方式一：可以撤销未被追踪的文件
+2.丢弃工作区的修改
+git checkout  hello.py
+
+方式二：可以撤销到任意版本
+#查看操作日志
+git reset + 日志id   （此时的文件未被追踪，也就是未提交）
+git add hello.py
+git commit –m ‘撤销操作’(此时文件可被追踪)
+
+git reset --hard  日志id
