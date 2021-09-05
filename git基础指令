@@ -33,3 +33,25 @@ git add hello.py
 git commit –m ‘撤销操作’(此时文件可被追踪)
 
 git reset --hard  日志id
+
+三、文件删除操作
+1.删除工作区的文件
+rm hello.py
+
+2.删除暂存区中的文件
+git rm hello.py
+
+3.删除当前分支中的文件
+git commit –m ‘描述信息’
+
+#4.添加并提交到分支中
+git commit -am '修改操作已完成'
+
+四、可以理解为独立开发功能的小房间
+1.建立新的分支(系统会自动把原有分支的文件拷贝一份到新建立的分支)
+git branch dev
+2.查看所有分支（前面带*的为当前的分支）
+git branch
+3.切换分支
+git checkout dev
+
