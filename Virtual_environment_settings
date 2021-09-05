@@ -1,0 +1,5 @@
+虚拟环境配置
+virtualenv blogenv –-python=python3.8  创建虚拟环境
+source active  激活虚拟环境
+detective退出虚拟环境
+workon blogenv加入虚拟环境
