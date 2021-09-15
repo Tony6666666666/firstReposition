@@ -13,7 +13,7 @@ class IndexView(View):
         #进行分页,每页显示八条数据
         pager = Paginator(goodList,8)  #位置传参
 
-        #获取当前几页的数据
+        #获取当前页的数据
         page_goodsList = pager.page(num)
 
         #每页开始页码
