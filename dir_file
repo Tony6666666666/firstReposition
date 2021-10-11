@@ -1,0 +1,8 @@
+import os
+if not os.path.exist('media'):
+    os.makedirs('media')
+    
+with open(os.path.join(os.getcwd(),'media',photo.name),'wb') as fw:
+    fw.write(photo.read())
+    
+    
