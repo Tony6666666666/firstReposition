@@ -5,7 +5,7 @@ if not os.path.exist('media'):
 with open(os.path.join(os.getcwd(),'media',photo.name),'wb') as fw:
     #fw.write(photo.read())
 
-    for ck in photo.chuncks():
+    for ck in photo.chunks():
         fw.write(ck)
     
     
