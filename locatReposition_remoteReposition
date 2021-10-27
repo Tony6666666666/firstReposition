@@ -1,4 +1,4 @@
-2.在git里面输入  ssh -keygen -t rsa -C "5163@163.com"，生成私钥和公钥
+2.在git里面输入  ssh-keygen -t rsa -C "5163@163.com"，生成私钥和公钥
 3.在用户主目录里面找到.ssh目录，里面有is_rsa和id_rsa.pub两个文件（密钥对）
   用户主目录:c：\user\administrator
 4.登录GitHub，打开Account settings,"SSH keys"页面
@@ -10,6 +10,9 @@ orginal:默认远程库名称
 
 6本地库关联远程库
 $ git remote add origin  git@github.com:Tony6666666666/firstReposition.git(code里面的ssh)
+
+（删除关联）
+git remote rm origin
 
 7.更新本地库
 git pull --rebase origin master
