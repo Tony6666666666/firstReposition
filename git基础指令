@@ -18,6 +18,28 @@ Git常用命令
 
 5.git commit –m ‘第一次提交代码’ 移动到相应的分支(工作区的版本和分支的版本为同一个版本，一致了)
 
+2.在git里面输入  ssh-keygen -t rsa -C "5163@163.com"，生成私钥和公钥
+3.在用户主目录里面找到.ssh目录，里面有is_rsa和id_rsa.pub两个文件（密钥对）
+  用户主目录:c：\user\administrator
+4.登录GitHub，打开Account settings,"SSH keys"页面
+5.点"Add SSH Key"，填上任意title，在key文本里面粘贴is_rsa.pub文件的内容
+
+本地库  关联  远程库
+
+orginal:默认远程库名称
+
+6本地库关联远程库
+$ git remote add origin  git@github.com:Tony6666666666/firstReposition.git(code里面的ssh)
+
+（删除关联）
+git remote rm origin
+
+7.更新本地库
+git pull --rebase origin master
+
+8.将本地库内容上传至远程库
+git push -u origin master
+
 二、文件撤销操作
 1.查看工作区和版本库里面最新版本的区别
 git diff HEAD hello.py
